@@ -22,7 +22,7 @@ class AddScript {
 	public function __construct() {
 
 		$this->plugin = new stdClass;
-		$this->plugin->wp_script = 'additional-scripts';
+		$this->plugin->wpScript = 'additional-scripts';
 		add_action( 'admin_init', array( &$this, 'admin_init' ) );
 		add_action( 'admin_menu', array( &$this, 'admin_menu' ) );
 		add_action( 'wp_head', array( &$this, 'wp_head' ) );
@@ -53,24 +53,24 @@ class AddScript {
 
 		// Admin rights for the page
 		if ( !current_user_can( 'administrator' ) ) {
-			echo '<p>' . __( 'Sorry, you are not allowed to access this page.', $this->plugin->wp_script ) . '</p>';
+			echo '<p>' . __( 'Sorry, you are not allowed to access this page.', $this->plugin->wpScript ) . '</p>';
 			return;
 		}
 
     	// Save Settings
         if ( isset( $_REQUEST['submit'] ) ) {
         	// Checking nonce keys
-			if ( !isset( $_REQUEST[$this->plugin->wp_script.'_nonce'] ) ) {
+			if ( !isset( $_REQUEST[$this->plugin->wpScript.'_nonce'] ) ) {
 	        	// Missing nonce keys
-	        	$this->errorMessage = __( 'nonce field is missing. Settings NOT saved.', $this->plugin->wp_script );
-        	} elseif ( !wp_verify_nonce( $_REQUEST[$this->plugin->wp_script.'_nonce'], $this->plugin->wp_script ) ) {
+	        	$this->errorMessage = __( 'nonce field is missing. Settings NOT saved.', $this->plugin->wpScript );
+        	} elseif ( !wp_verify_nonce( $_REQUEST[$this->plugin->wpScript.'_nonce'], $this->plugin->wpScript ) ) {
 	        	// Invalid nonce keys
-	        	$this->errorMessage = __( 'Invalid nonce specified. Settings NOT saved.', $this->plugin->wp_script );
+	        	$this->errorMessage = __( 'Invalid nonce specified. Settings NOT saved.', $this->plugin->wpScript );
         	} else {
 	        	// Save option
 	    		update_option( 'insert_in_header', $_REQUEST['insert_in_header'] );
 	    		update_option( 'insert_in_footer', $_REQUEST['insert_in_footer'] );
-				$this->message = __( 'Settings Saved.', $this->plugin->wp_script );
+				$this->message = __( 'Settings Saved.', $this->plugin->wpScript );
 			}
         }
 

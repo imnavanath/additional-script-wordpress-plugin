@@ -1,5 +1,5 @@
 <div class="wrap">
-    <h1 style="text-align: center;">Additional Scripts</h1>
+    <h1 style="text-align: center;">Additional Scripts for Header and Footer</h1>
 
     <?php
     if ( isset( $this->message ) ) {
@@ -30,7 +30,7 @@
 		                    	<p>
 		                    		<textarea style="margin-top: 20px; font-family: Courier New !important;" name="insert_in_footer" id="insert_in_footer" class="widefat" rows="8"><?php echo $this->settings['insert_in_footer']; ?></textarea>
 		                    	</p>
-		                    	<?php wp_nonce_field( 'additional-scripts', $this->plugin->wp_script.'_nonce' ); ?>
+		                    	<?php wp_nonce_field( 'additional-scripts', $this->plugin->wpScript.'_nonce' ); ?>
 		                    	<p>
 									<input name="submit" type="submit" name="Submit" class="button button-primary" value="<?php _e( 'Save' ); ?>" />
 								</p>
