@@ -1,10 +1,8 @@
 <?php
 /**
 * Plugin Name: Additional Script 
-* Plugin URI: #
 * Version: 1.0.0
 * Author: Navanath Bhosale
-* Author URI: #
 * Description: The plugin gives you flexibility for <strong> Additing Script in Header / Footer. </strong>
 * License: GPL2
 */
