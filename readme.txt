@@ -1,13 +1,13 @@
-=== Expandable Row for Beaver Builder ===
+=== Additional Script Wordpress Plugin ===
 Contributors: Navanath Bhosale
 Requires at least: 4.4
-Tags: header script, footer scrit, additional script, google analytics script
+Tags: header script, footer script, additional script, google analytics script
 Stable tag: 1.0.0
 Tested up to: 4.9.6
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-Additional Script
+Additional Script for Header and Footer
 
 == Description ==
 

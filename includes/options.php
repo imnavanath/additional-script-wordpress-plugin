@@ -30,24 +30,22 @@
 		                    	<p>
 		                    		<textarea style="margin-top: 20px; font-family: Courier New !important;" name="insert_in_footer" id="insert_in_footer" class="widefat" rows="8"><?php echo $this->settings['insert_in_footer']; ?></textarea>
 		                    	</p>
-		                    	<?php wp_nonce_field( 'additional-scripts', $this->plugin->name.'_nonce' ); ?>
+		                    	<?php wp_nonce_field( 'additional-scripts', $this->plugin->wp_script.'_nonce' ); ?>
 		                    	<p>
 									<input name="submit" type="submit" name="Submit" class="button button-primary" value="<?php _e( 'Save' ); ?>" />
 								</p>
 						    </form>
 	                    </div>
 	                </div>
-	                <!-- /postbox -->
 				</div>
-				<!-- /normal-sortables -->
     		</div>
-    		<!-- /post-body-content -->
+    		<!-- script-container -->
 
     		<!-- Sidebar -->
     		<div id="postbox-container-1" class="postbox-container">
-    			<?php require_once(ADD_SCRIPT_DIR . '/inc/metaboxes.php'); ?>
+    			<?php require_once(ADD_SCRIPT_DIR . '/includes/metaboxes.php'); ?>
     		</div>
-    		<!-- /postbox-container -->
+    		<!-- Postboxes -->
     	</div>
 	</div>
 </div>
