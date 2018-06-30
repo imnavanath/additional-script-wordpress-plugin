@@ -1,9 +1,9 @@
 <?php
 /**
-* Plugin Name: Additional Script 
+* Plugin Name: Additional Script / Styles
 * Version: 1.0.0
 * Author: Navanath Bhosale
-* Description: The plugin gives you flexibility for <strong> Additing Script in Header / Footer. </strong>
+* Description: The plugin gives you flexibility for <strong> Additing Script or CSS styles through Header / Footer on your site. </strong>
 * License: GPL2
 */
 

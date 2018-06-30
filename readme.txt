@@ -1,7 +1,7 @@
 === Additional Script Wordpress Plugin ===
 Contributors: navanathbhosale
 Requires at least: 4.4
-Tags: header script, footer script, additional script, google analytics script
+Tags: header script, footer script, additional script, google analytics script, custom style, add css style externally, custom css, add script
 Stable tag: 1.0.0
 Tested up to: 4.9.6
 License: GPLv2
